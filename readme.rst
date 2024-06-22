@@ -1,71 +1,41 @@
-###################
-What is CodeIgniter
-###################
+#######################Sistema de Gestión de Eventos Cobra########################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+#Descripción
+Sistema de Gestión de Eventos Cobra es una aplicación web desarrollada con CodeIgniter 3 que permite a los usuarios crear, visualizar, editar y eliminar eventos de manera eficiente. La aplicación ofrece una interfaz de usuario intuitiva con funcionalidades de paginación y operaciones AJAX para una experiencia fluida sin recargas de página.
 
-*******************
-Release Information
-*******************
+#Características
+- CRUD completo de eventos (Crear, Leer, Actualizar, Eliminar)
+- Interfaz de usuario responsiva
+- Paginación del lado del cliente
+- Operaciones con AJAX
+- Validación de formularios
+- Modal para edición de eventos
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+#Requisitos del Sistema
+- PHP 7.3 
+- MySQL 5.7 o superior
+- Servidor web Apache/Nginx
 
-**************************
-Changelog and New Features
-**************************
+#Instalación
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+Clonar el repositorio :
 
-*******************
-Server Requirements
-*******************
+git clone https://github.com/pierocarusso12/cobra.git
+Importar el esquema de la base de datos desde cobra.sql a tu base de datos MySQL.
 
-PHP version 5.6 or newer is recommended.
+Configurar los ajustes de base de datos de CodeIgniter en application/config/database.php.
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+Asegurarse de tener configurado un entorno de desarrollo local con XAMPP u otro similar, con Apache y PHP configurados.
 
-************
-Installation
-************
+Acceder a la aplicación a través del navegador: http://localhost/cobra
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
 
-*******
-License
-*******
+#Uso
+Agregar Evento: Ir al formulario "Agregar Evento", completar los detalles requeridos y enviar el formulario.
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+Editar Evento: Hacer clic en el botón "Editar" junto a un evento, modificar los detalles en el popup modal y guardar los cambios.
 
-*********
-Resources
-*********
+Eliminar Evento: Hacer clic en el botón "Eliminar" junto a un evento y confirmar la eliminación.
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+pierocarusso12@gmail.com
+904 316 174
