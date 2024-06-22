@@ -12,6 +12,7 @@ Sistema de Gestión de Eventos Cobra es una aplicación web desarrollada con Cod
 - Modal para edición de eventos
 
 #Requisitos del Sistema
+- XAMPP V3.3.0 (Por la version de CODEIGNITER 3 se necesita una version de XAMPP antigua) *IMPORTANTE SINO NO FUNCIONA*
 - PHP 7.3 
 - MySQL 5.7 o superior
 - Servidor web Apache/Nginx
