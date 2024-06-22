@@ -1,7 +1,7 @@
 #######################Sistema de Gestión de Eventos Cobra########################
 
 #Descripción
-Sistema de Gestión de Eventos Cobra es una aplicación web desarrollada con CodeIgniter 3 que permite a los usuarios crear, visualizar, editar y eliminar eventos de manera eficiente. La aplicación ofrece una interfaz de usuario intuitiva con funcionalidades de paginación y operaciones AJAX para una experiencia fluida sin recargas de página.
+Sistema de Gestión de Eventos Cobra es una aplicación web desarrollada con CodeIgniter 3 que permite a los usuarios crear, visualizar, editar y eliminar eventos de manera eficiente. La aplicación ofrece una interfaz de usuario intuitiva con validaciones y operaciones AJAX para una experiencia fluida sin recargas de página.
 
 #Características
 - CRUD completo de eventos (Crear, Leer, Actualizar, Eliminar)
