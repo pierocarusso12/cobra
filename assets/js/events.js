@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    // Cargar eventos al iniciar la página
+
     loadEvents();
 
-    // Manejar el envío del formulario para agregar eventos
+
     $('#addEventForm').submit(function(event) {
         event.preventDefault();
         var formData = $(this).serialize();
@@ -14,8 +14,8 @@ $(document).ready(function() {
             dataType: 'json',
             success: function(response) {
                 if (response.success) {
-                    $('#addEventForm')[0].reset(); // Limpiar el formulario
-                    loadEvents(); // Recargar la lista de eventos
+                    $('#addEventForm')[0].reset(); 
+                    loadEvents(); 
                 } else {
                     alert('Error al agregar el evento: ' + response.errors);
                 }
@@ -28,7 +28,7 @@ $(document).ready(function() {
     });
     
 
-    // Función para cargar eventos
+  
     function loadEvents() {
         $.ajax({
             type: 'GET',
@@ -44,7 +44,7 @@ $(document).ready(function() {
         });
     }
 
-    // Función para mostrar eventos en la tabla
+    
     function displayEvents(events) {
         var eventsHtml = '';
         $.each(events, function(index, event) {
@@ -62,23 +62,23 @@ $(document).ready(function() {
         $('#eventsList').html(eventsHtml);
     }
 
-    // Manejar la edición de eventos
+
     $(document).on('click', '.editEvent', function() {
         var eventId = $(this).data('id');
-        // Cargar los datos del evento para edición
+      
         $.ajax({
             type: 'GET',
             url: baseUrl + 'index.php/events/getOne/' + eventId,
             dataType: 'json',
             success: function(event) {
-                // Llenar el formulario de edición con los datos del evento
+              
                 $('#editEventForm input[name="id"]').val(event.id);
                 $('#editEventForm input[name="title"]').val(event.title);
                 $('#editEventForm textarea[name="description"]').val(event.description);
                 $('#editEventForm input[name="start_datetime"]').val(formatDateTime(event.start_datetime));
                 $('#editEventForm input[name="end_datetime"]').val(formatDateTime(event.end_datetime));
                 
-                // Abrir el modal
+             
                 $('#editModal').show();
             },
             error: function(xhr, status, error) {
@@ -88,7 +88,7 @@ $(document).ready(function() {
         });
     });
     
-    // Función para formatear la fecha y hora
+
     function formatDateTime(dateTimeString) {
         var date = new Date(dateTimeString);
         return date.getFullYear() + '-' + 
@@ -98,7 +98,7 @@ $(document).ready(function() {
                ('0' + date.getMinutes()).slice(-2);
     }
     
-    // Cerrar el modal
+  
     $('.close').click(function() {
         $('#editModal').hide();
     });
@@ -114,8 +114,8 @@ $(document).ready(function() {
             dataType: 'json',
             success: function(response) {
                 if (response.success) {
-                    $('#editModal').hide(); // Ocultar el modal de edición
-                    loadEvents(); // Recargar la lista de eventos
+                    $('#editModal').hide(); 
+                    loadEvents(); 
                 } else {
                     alert('Error al editar el evento: ' + response.errors);
                 }
@@ -128,7 +128,7 @@ $(document).ready(function() {
     });
     
 
-    // Manejar la eliminación de eventos
+   
     $(document).on('click', '.deleteEvent', function() {
         var eventId = $(this).data('id');
         if (confirm('¿Estás seguro de que quieres eliminar este evento?')) {
@@ -139,7 +139,7 @@ $(document).ready(function() {
             dataType: 'json',
             success: function(response) {
                 if (response.success) {
-                    loadEvents(); // Recargar la lista de eventos
+                    loadEvents(); 
                 } else {
                     alert('Error al eliminar el evento');
                 }
