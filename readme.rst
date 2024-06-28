@@ -1,9 +1,9 @@
-#######################Sistema de Gestión de Eventos Cobra########################
+# Sistema de Gestión de Eventos Cobra
 
-#Descripción
+## Descripción
 Sistema de Gestión de Eventos Cobra es una aplicación web desarrollada con CodeIgniter 3 que permite a los usuarios crear, visualizar, editar y eliminar eventos de manera eficiente. La aplicación ofrece una interfaz de usuario intuitiva con validaciones y operaciones AJAX para una experiencia fluida sin recargas de página.
 
-#Características
+## Características
 - CRUD completo de eventos (Crear, Leer, Actualizar, Eliminar)
 - Interfaz de usuario responsiva
 - Paginación del lado del cliente
@@ -11,13 +11,13 @@ Sistema de Gestión de Eventos Cobra es una aplicación web desarrollada con Cod
 - Validación de formularios
 - Modal para edición de eventos
 
-#Requisitos del Sistema
+## Requisitos del Sistema
 - XAMPP V3.3.0 (*IMPORTANTE SINO NO FUNCIONA*)
 - PHP 7.4.30 (*IMPORTANTE TENER UNA VERSION ANTIGUA DE PHP SINO NO FUNCIONA , ESTO ES POR CODEIGNITER 3*)
 - MySQL 5.7 o superior
 - Servidor web Apache/Nginx
 
-#Instalación
+## Instalación
 
 Clonar el repositorio :
 
@@ -31,7 +31,7 @@ Asegurarse de tener configurado un entorno de desarrollo local con XAMPP u otro 
 Acceder a la aplicación a través del navegador: http://localhost/cobra
 
 
-#Uso
+## Uso
 Agregar Evento: Ir al formulario "Agregar Evento", completar los detalles requeridos y enviar el formulario.
 
 Editar Evento: Hacer clic en el botón "Editar" junto a un evento, modificar los detalles en el popup modal y guardar los cambios.
