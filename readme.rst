@@ -19,7 +19,7 @@ Sistema de Gestión de Eventos Cobra es una aplicación web desarrollada con Cod
 
 ## Instalación
 
-Clonar el repositorio :
+### Clonar el repositorio :
 
 git clone https://github.com/pierocarusso12/cobra.git
 Importar el esquema de la base de datos desde cobra.sql a tu base de datos MySQL.
@@ -29,7 +29,6 @@ Configurar los ajustes de base de datos de CodeIgniter en application/config/dat
 Asegurarse de tener configurado un entorno de desarrollo local con XAMPP u otro similar, con Apache y PHP configurados.
 
 Acceder a la aplicación a través del navegador: http://localhost/cobra
-
 
 ## Uso
 Agregar Evento: Ir al formulario "Agregar Evento", completar los detalles requeridos y enviar el formulario.
